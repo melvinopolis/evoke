@@ -1,0 +1,81 @@
+.user-info {
+	width: 100%;
+	border-bottom: border(1px, $lightBlue);
+	height: 252px;
+	box-sizing: border-box;
+	.profile-pic {
+		display: inline-block;
+		width: 45%;
+		box-sizing: border-box;
+		padding: 5%;
+		img {
+			width: 100%;
+			max-width: 200px;
+			margin: 0 auto;
+		}
+	}
+	.details {
+		display: inline-block;
+		box-sizing: border-box;
+		width: 50%;
+		padding-left: 5%;
+		font-size: .75em;
+		position: relative;
+		top: 20px;
+		h1 {
+			margin-bottom: 5px;
+		}
+		p {
+			margin: 5px 0;
+			&.location {
+				margin-top: 20px;
+			}
+			&.hire-date {
+				margin-bottom: 30px;
+				color: $mediumBlue;
+			}
+		}
+		.progress {
+			width: 150px;
+			padding: 3px 7px;
+			text-align: center;
+			color: $mediumBlue;
+			border: border(2px, $mediumBlue);
+			border-radius: 15px;
+			.yellow {
+				display: inline-block;
+				height: 15px;
+				width: 15px;
+				border-radius: 50%;
+				background: $yellow;
+				position: relative;
+				top: 2px;
+				right: 5px;
+			}
+			p {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.managers {
+	width: 100%;
+	border-bottom: border(1px, $lightBlue);
+	.manager {
+		display: inline-block;
+		width: 50%;
+		box-sizing: border-box;
+		h2 {
+		}
+		img {
+			height: 65px;
+		}
+		h3 {
+		}
+	}
+	.manager:last-child {
+		float: right;
+		border-left: border(1px, $lightBlue);
+	}
+}

@@ -1,3 +1,187 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
 
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+footer,
+header,
+nav {
+  display: block; }
+
+/* Links
+   ========================================================================== */
+a {
+  background-color: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+b,
+strong {
+  font-weight: bold; }
+
+h1 {
+  font-size: 2em;
+  margin: 0; }
+
+h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+/* Embedded content
+   ========================================================================== */
+img {
+  border: 0; }
+
+/* Grouping content
+   ========================================================================== */
+div {
+  margin: 0;
+  padding: 0; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+body {
+  color: #323a45;
+  font-family: 'Lato', sans-serif; }
+
+ul {
+  list-style: none; }
+
+img {
+  border-radius: 50%; }
+
+.main {
+  padding-top: 80px; }
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  display: inline-block;
+  background: #323a45;
+  color: #fff;
+  padding: 0 40px;
+  letter-spacing: .1em;
+  z-index: 1;
+  border-bottom: 2px solid #000;
+  box-sizing: border-box; }
+  .logo h1 {
+    margin: 5px 0; }
+  .logo span {
+    font-weight: 100;
+    font-style: italic; }
+
+nav {
+  background: #efebe8;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: inline-block;
+  height: 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #cfd8dd; }
+  nav .menu {
+    float: left;
+    color: #546f7a;
+    font-size: 35px;
+    padding: 7.5px 10px 7.5px 190px;
+    border-right: 1px solid #cfd8dd; }
+  nav .user-dropdown {
+    float: right;
+    color: #546f7a; }
+    nav .user-dropdown img {
+      height: 40px;
+      padding: 5px 10px; }
+    nav .user-dropdown p {
+      display: none;
+      margin: 0; }
+    nav .user-dropdown i {
+      position: relative;
+      bottom: 10px;
+      right: 10px; }
+
+.sidebar {
+  display: none; }
+
+.user-info {
+  width: 100%;
+  border-bottom: 1px solid #cfd8dd;
+  height: 252px;
+  box-sizing: border-box; }
+  .user-info .profile-pic {
+    display: inline-block;
+    width: 45%;
+    box-sizing: border-box;
+    padding: 5%; }
+    .user-info .profile-pic img {
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto; }
+  .user-info .details {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 5%;
+    font-size: .75em;
+    position: relative;
+    top: 20px; }
+    .user-info .details h1 {
+      margin-bottom: 5px; }
+    .user-info .details p {
+      margin: 5px 0; }
+      .user-info .details p.location {
+        margin-top: 20px; }
+      .user-info .details p.hire-date {
+        margin-bottom: 30px;
+        color: #546f7a; }
+    .user-info .details .progress {
+      width: 150px;
+      padding: 3px 7px;
+      text-align: center;
+      color: #546f7a;
+      border: 2px solid #546f7a;
+      border-radius: 15px; }
+      .user-info .details .progress .yellow {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: #f9ee3d;
+        position: relative;
+        top: 2px;
+        right: 5px; }
+      .user-info .details .progress p {
+        display: inline-block; }
+
+.managers {
+  width: 100%;
+  border-bottom: 1px solid #cfd8dd; }
+  .managers .manager {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box; }
+    .managers .manager img {
+      height: 65px; }
+  .managers .manager:last-child {
+    float: right;
+    border-left: 1px solid #cfd8dd; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,3 @@
+@function border($size, $color){
+	@return $size solid $color;
+}
