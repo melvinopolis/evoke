@@ -1,6 +1,10 @@
+// * {
+// 	border: 1px solid black;
+// }
+
 body {
 	color: $darkBlue;
-	font-family: 'Lato', sans-serif;
+	font-family: $mainFont;
 }
 
 ul {
@@ -12,5 +16,5 @@ img {
 }
 
 .main {
-	padding-top: 80px;
+	padding-top: 50px;
 }

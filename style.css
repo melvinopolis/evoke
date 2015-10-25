@@ -59,7 +59,7 @@ hr {
 
 body {
   color: #323a45;
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 ul {
   list-style: none; }
@@ -68,7 +68,7 @@ img {
   border-radius: 50%; }
 
 .main {
-  padding-top: 80px; }
+  padding-top: 50px; }
 
 .logo {
   position: absolute;
@@ -103,10 +103,12 @@ nav {
     color: #546f7a;
     font-size: 35px;
     padding: 7.5px 10px 7.5px 190px;
-    border-right: 1px solid #cfd8dd; }
+    border-right: 1px solid #cfd8dd;
+    cursor: pointer; }
   nav .user-dropdown {
     float: right;
-    color: #546f7a; }
+    color: #546f7a;
+    cursor: pointer; }
     nav .user-dropdown img {
       height: 40px;
       padding: 5px 10px; }
@@ -125,24 +127,23 @@ nav {
   width: 100%;
   border-bottom: 1px solid #cfd8dd;
   height: 252px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 24px 10px; }
   .user-info .profile-pic {
     display: inline-block;
-    width: 45%;
-    box-sizing: border-box;
-    padding: 5%; }
+    width: 40%;
+    box-sizing: border-box; }
     .user-info .profile-pic img {
       width: 100%;
       max-width: 200px;
-      margin: 0 auto; }
+      margin: 20px auto 0; }
   .user-info .details {
     display: inline-block;
     box-sizing: border-box;
-    width: 50%;
-    padding-left: 5%;
-    font-size: .75em;
-    position: relative;
-    top: 20px; }
+    width: 200px;
+    font-size: 0.7em;
+    font-weight: 300;
+    float: right; }
     .user-info .details h1 {
       margin-bottom: 5px; }
     .user-info .details p {
@@ -151,14 +152,15 @@ nav {
         margin-top: 20px; }
       .user-info .details p.hire-date {
         margin-bottom: 30px;
-        color: #546f7a; }
+        color: #a7b2b7;
+        font-weight: 400; }
     .user-info .details .progress {
       width: 150px;
       padding: 3px 7px;
       text-align: center;
       color: #546f7a;
-      border: 2px solid #546f7a;
-      border-radius: 15px; }
+      border: 1px solid #546f7a;
+      border-radius: 14px; }
       .user-info .details .progress .yellow {
         display: inline-block;
         height: 15px;
@@ -178,10 +180,95 @@ nav {
     display: inline-block;
     width: 50%;
     box-sizing: border-box; }
+    .managers .manager h2 {
+      font-size: 0.8em;
+      background: #546f7a;
+      color: #fff;
+      width: 50%;
+      padding: 5px 10px;
+      font-weight: 400;
+      text-align: center; }
     .managers .manager img {
-      height: 65px; }
+      height: 65px;
+      display: inline-block;
+      padding: 20px 25px; }
+    .managers .manager div {
+      display: inline-block; }
+      .managers .manager div h3 {
+        font-size: 0.8em; }
+      .managers .manager div p {
+        font-size: 0.7em; }
   .managers .manager:last-child {
     float: right;
     border-left: 1px solid #cfd8dd; }
+
+.evaluation h2 {
+  color: #546f7a;
+  width: 100%;
+  font-size: 0.8em;
+  font-weight: 400;
+  padding: 20px;
+  box-sizing: border-box; }
+.evaluation ul {
+  color: #546f7a;
+  padding: 0 20px 20px;
+  font-size: 0.7em;
+  font-weight: 300;
+  padding-left: 40px;
+  margin-top: 0; }
+  .evaluation ul li {
+    padding: 15px 0; }
+    .evaluation ul li > * {
+      display: inline-block; }
+  .evaluation ul li {
+    border-left: 3px solid #cfd8dd; }
+    .evaluation ul li .circle {
+      height: 20px;
+      width: 20px;
+      background: #fff;
+      border: 3px solid #cfd8dd;
+      border-radius: 50%;
+      float: left;
+      margin: -7px 20px 0 -15px; }
+    .evaluation ul li.complete {
+      border-left: 3px solid #546f7a; }
+      .evaluation ul li.complete .circle {
+        background: #8bc14b;
+        border: 3px solid #546f7a; }
+
+.actions h2 {
+  background: #546f7a;
+  color: #fff;
+  width: 100%;
+  font-size: 0.8em;
+  font-weight: 400;
+  padding: 20px;
+  box-sizing: border-box; }
+.actions ul {
+  padding: 0 20px 20px;
+  font-size: 0.7em;
+  font-weight: 300;
+  color: #546f7a; }
+  .actions ul li {
+    padding: 15px 0; }
+    .actions ul li > * {
+      display: inline-block; }
+  .actions ul i {
+    color: #e26f0c;
+    font-size: 15px;
+    position: relative;
+    top: 2px; }
+  .actions ul li:not(:last-child) {
+    border-bottom: 1px solid #cfd8dd; }
+  .actions ul li p {
+    padding-left: 20px; }
+  .actions ul li a, .actions ul li a:visited {
+    color: #546f7a;
+    text-decoration: none;
+    font-weight: 400;
+    float: right;
+    margin-top: 5px; }
+    .actions ul li a:hover, .actions ul li a:visited:hover {
+      text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */

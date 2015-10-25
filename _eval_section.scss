@@ -1,0 +1,31 @@
+.evaluation {
+	h2 {
+		color: $mediumBlue;
+		@include headerStyles;
+	}
+	ul {
+		color: $mediumBlue;
+		@include listStyles;
+		padding-left: 40px;
+		margin-top: 0;
+		li {
+			border-left: border(3px, $lightBlue);
+			.circle {
+				height: 20px;
+				width: 20px;
+				background: $white;
+				border: border(3px, $lightBlue);
+				border-radius: 50%;
+				float: left;
+				margin: -7px 20px 0 -15px;
+			}
+			&.complete {
+				border-left: border(3px, $mediumBlue);
+				.circle{
+					background: $green;
+					border: border(3px, $mediumBlue);
+				}	
+			}
+		}
+	}
+}

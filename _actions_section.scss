@@ -1,0 +1,35 @@
+.actions {
+	h2 {
+		background: $mediumBlue;
+		color: $white;
+		@include headerStyles;
+	}
+	ul {
+		@include listStyles;
+		color: $mediumBlue;
+		i {
+			color: $orange;
+			font-size: 15px;
+			position: relative;
+			top: 2px;
+		}
+		li {
+			&:not(:last-child) {
+				border-bottom: border(1px, $lightBlue);
+			}
+			p {
+				padding-left: 20px;
+			}
+			a, a:visited {
+				color: $mediumBlue;
+				text-decoration: none;
+				font-weight: $normalWeight;
+				float: right;
+				margin-top: 5px;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

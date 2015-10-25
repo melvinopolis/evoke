@@ -35,10 +35,12 @@ nav {
 		font-size: 35px;
 		padding: 7.5px 10px 7.5px 190px;
 		border-right: border(1px, $lightBlue);
+		cursor: pointer;
 	}
 	.user-dropdown {
 		float: right;
 		color: $mediumBlue;
+		cursor: pointer;
 		img {
 			height: 40px;
 			padding: 5px 10px;
