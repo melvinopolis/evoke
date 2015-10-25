@@ -60,6 +60,9 @@
 }
 
 .managers {
+	// * {
+	// 	border: 1px solid black;
+	// }
 	width: 100%;
 	border-bottom: border(1px, $lightBlue);
 	.manager {
@@ -78,15 +81,19 @@
 		img {
 			height: 65px;
 			display: inline-block;
-			padding: 20px 25px;
+			padding: 20px;
+			float: left;
 		}
 		div {
 			display: inline-block;
+			margin-left: -10px;
+			padding-top: 40px;
 			h3 {
 				font-size: $smallHeader;
 			}
 			p {
 				font-size: $smallText;
+
 			}
 		}		
 	}

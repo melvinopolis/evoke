@@ -1,0 +1,33 @@
+// functions
+@function border($size, $color) {
+    @return $size solid $color;
+}
+
+// mixins
+@mixin headerStyles {
+    width: 100%;
+    font-size: $smallHeader;
+    font-weight: $normalWeight;
+    padding: 20px;
+    box-sizing: $boxSizing;
+}
+
+@mixin listStyles {
+    margin: 0;
+    padding: 0 20px 20px;
+    font-size: $smallText;
+    font-weight: $lightWeight;
+    li {
+        padding: 15px 0;
+        & > * {
+            display: inline-block;
+        }
+    }
+}
+
+@mixin warningIcon {
+    color: $orange;
+    font-size: 15px;
+    position: relative;
+    top: 2px;
+}

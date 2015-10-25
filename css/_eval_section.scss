@@ -7,7 +7,6 @@
 		color: $mediumBlue;
 		@include listStyles;
 		padding-left: 40px;
-		margin-top: 0;
 		li {
 			border-left: border(3px, $lightBlue);
 			.circle {

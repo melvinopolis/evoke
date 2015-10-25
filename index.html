@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Evoke</title>
 
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
@@ -9,7 +10,7 @@
       rel="stylesheet">
 
     <!-- Custom styles -->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="logo">
@@ -20,11 +21,18 @@
 		<div class="user-dropdown">
 			<img src="img/angela.png"><p>Angela Shields</p>
 			<i class="material-icons">keyboard_arrow_down</i>
+
+			<div class="dropdown">
+				<ul>
+					<li>Edit Account</li>
+					<li>Log Out</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 
 	<div class="sidebar">
-		<ul>
+		<ul class="nav">
 			<li class="active">Dashboard</li>
 			<li>Goals</li>
 			<li>Accomplishments</li>
@@ -36,15 +44,15 @@
 		<ul class="actions">
 			<li>
 				<i class="material-icons">warning</i>
-				You have 32 days to complete your Self-Evaluation
+				<p>You have 32 days to complete your Self-Evaluation</p>
 			</li>
 			<li>
 				<i class="material-icons">warning</i>
-				You have 32 days to complete your 2015 Goals
+				<p>You have 32 days to complete your 2015 Goals</p>
 			</li>
 			<li>
 				<i class="material-icons">warning</i>
-				One of your 2015 Goal deadlines is approaching
+				<p>One of your 2015 Goal deadlines is approaching</p>
 			</li>
 		</ul>
 	</div><!-- end sidebar -->
@@ -156,6 +164,8 @@
 		</div><!-- end actions -->
 	</div><!-- end main -->
 	
-	
+	<!-- JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>

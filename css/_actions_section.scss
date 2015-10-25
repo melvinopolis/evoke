@@ -8,10 +8,7 @@
 		@include listStyles;
 		color: $mediumBlue;
 		i {
-			color: $orange;
-			font-size: 15px;
-			position: relative;
-			top: 2px;
+			@include warningIcon;
 		}
 		li {
 			&:not(:last-child) {
