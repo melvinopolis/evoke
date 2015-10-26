@@ -1,26 +1,32 @@
 .user-info {
 	width: 100%;
-	border-bottom: border(1px, $lightBlue);
 	height: 252px;
-	box-sizing: border-box;
-	padding: 24px 10px;
-	.profile-pic {
+	padding: 24px 5%;
+	box-sizing: $boxSizing;
+	background: $white;
+	border-bottom: border(1px, $lightBlue);
+	@media #{$medium-screen} {
+		width: 70%;
 		display: inline-block;
-		width: 40%;
+		height: 244px;
+	}
+	.profile-pic {
+		width: 45%;
+		display: inline-block;
 		box-sizing: $boxSizing;
+		text-align: center;
 		img {
-			width: 100%;
-			max-width: 200px;
+			width: 150px;
 			margin: 20px auto 0;
 		}
 	}
 	.details {
+		float: right;
+		width: 50%;
 		display: inline-block;
-		box-sizing: border-box;
-		width: 200px;
+		box-sizing: $boxSizing;
 		font-size: $smallText;
 		font-weight: $lightWeight;
-		float: right;
 		h1 {
 			margin-bottom: 5px;
 		}
@@ -43,62 +49,72 @@
 			border: border(1px, $mediumBlue);
 			border-radius: 14px;
 			.yellow {
+				position: relative;
+				top: 4px;
+				right: 5px;
 				display: inline-block;
 				height: 15px;
 				width: 15px;
 				border-radius: 50%;
 				background: $yellow;
-				position: relative;
-				top: 2px;
-				right: 5px;
 			}
 			p {
 				display: inline-block;
 			}
 		}
 	}
-}
+} // end user info
 
 .managers {
-	// * {
-	// 	border: 1px solid black;
-	// }
 	width: 100%;
-	border-bottom: border(1px, $lightBlue);
+	background: $white;
+	@media #{$medium-screen} {
+		float: right;
+		display: inline-block;
+		width: 30%;
+	}
 	.manager {
 		display: inline-block;
 		width: 50%;
-		box-sizing: border-box;
+		box-sizing: $boxSizing;
+		border-bottom: border(1px, $lightBlue);
+		border-left: border(1px, $lightBlue);
+		@media #{$medium-screen} {
+			float: none;
+			width: 100%;
+			display: inline-block;
+		}
 		h2 {
+			width: 50%;
+			padding: 5px 0;
 			font-size: $smallHeader;
 			background: $mediumBlue;
 			color: $white;
-			width: 50%;
-			padding: 5px 10px;
-			font-weight: $normalWeight;
 			text-align: center;
+			font-weight: $lightWeight;
 		}
 		img {
-			height: 65px;
-			display: inline-block;
-			padding: 20px;
 			float: left;
+			display: inline-block;
+			height: 65px;
+			padding: 15px 10%;
 		}
 		div {
 			display: inline-block;
 			margin-left: -10px;
-			padding-top: 40px;
+			padding-top: 30px;
 			h3 {
 				font-size: $smallHeader;
 			}
 			p {
 				font-size: $smallText;
-
+			}
+		}
+		&:last-child {
+			float: right;
+			@media #{$medium-screen} {
+				float: none;
 			}
 		}		
-	}
-	.manager:last-child {
-		float: right;
-		border-left: border(1px, $lightBlue);
-	}
-}
+	} // end manager
+} // end managers

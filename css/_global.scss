@@ -1,9 +1,6 @@
-// * {
-// 	border: 1px solid black;
-// }
-
 body {
 	color: $darkBlue;
+	background: $tan;
 	font-family: $mainFont;
 }
 
@@ -17,4 +14,10 @@ img {
 
 .main {
 	padding-top: 50px;
+	width: 100%;
+	box-sizing: $boxSizing;
+	@media #{$small-screen} {
+		//gives space for the sidebar while keeping the rest of the page fluid
+		padding-left: 174px;
+	}
 }

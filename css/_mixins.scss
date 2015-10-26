@@ -6,15 +6,15 @@
 // mixins
 @mixin headerStyles {
     width: 100%;
-    font-size: $smallHeader;
-    font-weight: $normalWeight;
     padding: 20px;
     box-sizing: $boxSizing;
+    font-size: $smallHeader;
+    font-weight: $normalWeight;
 }
 
 @mixin listStyles {
     margin: 0;
-    padding: 0 20px 20px;
+    padding: 0 5% 20px;
     font-size: $smallText;
     font-weight: $lightWeight;
     li {
@@ -26,8 +26,9 @@
 }
 
 @mixin warningIcon {
-    color: $orange;
-    font-size: 15px;
     position: relative;
     top: 2px;
+    color: $orange;
+    font-size: 15px;
+    
 }

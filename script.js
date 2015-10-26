@@ -1,9 +1,11 @@
 $(document).ready(function() {
     // sidebar will be hidden and toggle with the menu icon on mobile and portait oriented tablets
-    if ($(window).width() < 770) {
+    if ($(window).width() < 768) {
         var $sidebar = $('.sidebar')
         var $menu = $('nav .menu')
 
+        $sidebar.hide();
+        
         $menu.on('click', function() {
             $sidebar.slideToggle();
         });

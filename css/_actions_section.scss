@@ -1,11 +1,17 @@
 .actions {
+	width: 100%;
+	@media #{$small-screen} {
+		max-width: 600px;
+		margin: 20px auto;
+	}
 	h2 {
+		@include headerStyles;
 		background: $mediumBlue;
 		color: $white;
-		@include headerStyles;
 	}
 	ul {
 		@include listStyles;
+		background: $white;
 		color: $mediumBlue;
 		i {
 			@include warningIcon;
@@ -18,15 +24,15 @@
 				padding-left: 20px;
 			}
 			a, a:visited {
-				color: $mediumBlue;
-				text-decoration: none;
-				font-weight: $normalWeight;
 				float: right;
 				margin-top: 5px;
+				text-decoration: none;
+				color: $mediumBlue;
+				font-weight: $normalWeight;
 				&:hover {
 					text-decoration: underline;
 				}
 			}
-		}
-	}
+		} // end li
+	} // end ul
 }
