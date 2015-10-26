@@ -50,8 +50,11 @@ nav {
 		border-bottom: border(1px, $lightBlue);
 		cursor: pointer;
 		img {
-			height: 40px;
+			height: 35px;
 			padding: 5px 10px;
+			@media (min-width: 400px) {
+				height: 40px;
+			}
 		}
 		p {
 			display: none;

@@ -134,8 +134,11 @@ nav {
     border-bottom: 1px solid #cfd8dd;
     cursor: pointer; }
     nav .user-dropdown img {
-      height: 40px;
+      height: 35px;
       padding: 5px 10px; }
+      @media (min-width: 400px) {
+        nav .user-dropdown img {
+          height: 40px; } }
     nav .user-dropdown p {
       display: none;
       margin: 0; }
@@ -255,8 +258,11 @@ nav {
     box-sizing: border-box;
     text-align: center; }
     .user-info .profile-pic img {
-      width: 150px;
+      width: 100px;
       margin: 20px auto 0; }
+      @media (min-width: 400px) {
+        .user-info .profile-pic img {
+          width: 150px; } }
   .user-info .details {
     float: right;
     width: 50%;
@@ -265,7 +271,11 @@ nav {
     font-size: 0.7em;
     font-weight: 300; }
     .user-info .details h1 {
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      font-size: 1.5em; }
+      @media (min-width: 400px) {
+        .user-info .details h1 {
+          font-size: 2em; } }
     .user-info .details p {
       margin: 5px 0; }
       .user-info .details p.location {
@@ -275,12 +285,15 @@ nav {
         color: #a7b2b7;
         font-weight: 400; }
     .user-info .details .progress {
-      width: 150px;
+      width: 120px;
       padding: 3px 7px;
       text-align: center;
       color: #546f7a;
       border: 1px solid #546f7a;
       border-radius: 14px; }
+      @media (min-width: 400px) {
+        .user-info .details .progress {
+          width: 150px; } }
       .user-info .details .progress .yellow {
         position: relative;
         top: 4px;
@@ -308,7 +321,11 @@ nav {
     width: 50%;
     box-sizing: border-box;
     border-bottom: 1px solid #cfd8dd;
-    border-left: 1px solid #cfd8dd; }
+    border-left: 1px solid #cfd8dd;
+    text-align: center; }
+    @media (min-width: 400px) {
+      .managers .manager {
+        text-align: left; } }
     @media (min-width: 992px) {
       .managers .manager {
         float: none;
@@ -316,24 +333,38 @@ nav {
         height: 122px;
         display: inline-block; } }
     .managers .manager h2 {
-      width: 50%;
+      width: 60%;
       padding: 5px 0;
-      font-size: 0.8em;
+      font-size: 0.7em;
       background: #546f7a;
       color: #fff;
       text-align: center;
       font-weight: 300; }
+      @media (min-width: 400px) {
+        .managers .manager h2 {
+          font-size: 0.8em;
+          width: 50%; } }
     .managers .manager img {
-      float: left;
-      display: inline-block;
       height: 65px;
-      padding: 15px 10%; }
+      margin: 10px auto 0; }
+      @media (min-width: 400px) {
+        .managers .manager img {
+          float: left;
+          display: inline-block;
+          height: 65px;
+          padding: 15px 10px; } }
     .managers .manager div {
-      display: inline-block;
-      margin-left: -10px;
-      padding-top: 30px; }
+      padding: 10px; }
+      @media (min-width: 400px) {
+        .managers .manager div {
+          display: inline-block;
+          margin-left: -10px;
+          padding-top: 36px; } }
       .managers .manager div h3 {
-        font-size: 0.8em; }
+        font-size: 0.7em; }
+        @media (min-width: 400px) {
+          .managers .manager div h3 {
+            font-size: 0.8em; } }
       .managers .manager div p {
         font-size: 0.7em; }
     .managers .manager:last-child {
@@ -457,6 +488,9 @@ nav {
     padding: 0 5% 20px;
     font-size: 0.7em;
     font-weight: 300;
+    width: 100%;
+    display: table;
+    box-sizing: border-box;
     background: #fff;
     color: #546f7a; }
     .actions ul li {
@@ -468,10 +502,17 @@ nav {
       top: 2px;
       color: #e26f0c;
       font-size: 15px; }
+    .actions ul li > * {
+      vertical-align: middle; }
     .actions ul li:not(:last-child) {
       border-bottom: 1px solid #cfd8dd; }
     .actions ul li p {
-      padding-left: 30px; }
+      padding-left: 30px;
+      max-width: 225px;
+      box-sizing: border-box; }
+      @media (min-width: 400px) {
+        .actions ul li p {
+          max-width: 500px; } }
     .actions ul li a, .actions ul li a:visited {
       float: right;
       margin-top: 5px;

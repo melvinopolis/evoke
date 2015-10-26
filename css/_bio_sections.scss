@@ -19,8 +19,11 @@
 		box-sizing: $boxSizing;
 		text-align: center;
 		img {
-			width: 150px;
+			width: 100px;
 			margin: 20px auto 0;
+			@media (min-width: 400px) { 
+				width: 150px;	
+			}	
 		}
 	}
 	.details {
@@ -32,6 +35,10 @@
 		font-weight: $lightWeight;
 		h1 {
 			margin-bottom: 5px;
+			font-size: 1.5em;
+			@media (min-width: 400px) {
+				font-size: 2em;
+			}
 		}
 		p {
 			margin: 5px 0;
@@ -45,12 +52,15 @@
 			}
 		}
 		.progress {
-			width: 150px;
+			width: 120px;
 			padding: 3px 7px;
 			text-align: center;
 			color: $mediumBlue;
 			border: border(1px, $mediumBlue);
 			border-radius: 14px;
+			@media (min-width: 400px) {
+				width: 150px;
+			}
 			.yellow {
 				position: relative;
 				top: 4px;
@@ -84,6 +94,10 @@
 		box-sizing: $boxSizing;
 		border-bottom: border(1px, $lightBlue);
 		border-left: border(1px, $lightBlue);
+		text-align: center;
+		@media (min-width: 400px) {
+			text-align: left;
+		}
 		@media #{$medium-screen} {
 			float: none;
 			width: 100%;
@@ -91,26 +105,41 @@
 			display: inline-block;
 		}
 		h2 {
-			width: 50%;
+			width: 60%;
 			padding: 5px 0;
-			font-size: $smallHeader;
+			font-size: $smallText;
 			background: $mediumBlue;
 			color: $white;
 			text-align: center;
 			font-weight: $lightWeight;
+			@media (min-width: 400px) {
+				font-size: $smallHeader;
+				width: 50%;
+			}
 		}
 		img {
-			float: left;
-			display: inline-block;
 			height: 65px;
-			padding: 15px 10%;
+			margin: 10px auto 0;
+			@media (min-width: 400px) {
+				float: left;
+				display: inline-block;
+				height: 65px;
+				padding: 15px 10px;
+			}
 		}
 		div {
-			display: inline-block;
-			margin-left: -10px;
-			padding-top: 30px;
+			padding: 10px;
+			@media (min-width: 400px) {
+				display: inline-block;
+				margin-left: -10px;
+				padding-top: 36px;
+
+			}
 			h3 {
-				font-size: $smallHeader;
+				font-size: $smallText;
+				@media (min-width: 400px) {
+					font-size: $smallHeader;
+				}
 			}
 			p {
 				font-size: $smallText;

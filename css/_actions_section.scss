@@ -15,17 +15,28 @@
 	}
 	ul {
 		@include listStyles;
+		width: 100%;
+		display: table;
+		box-sizing: $boxSizing;
 		background: $white;
 		color: $mediumBlue;
 		i {
 			@include warningIcon;
 		}
 		li {
+			& > * {
+				vertical-align: middle;
+			}
 			&:not(:last-child) {
 				border-bottom: border(1px, $lightBlue);
 			}
 			p {
 				padding-left: 30px;
+				max-width: 225px;
+				box-sizing: $boxSizing;
+				@media (min-width: 400px) {
+					max-width: 500px;
+				}
 			}
 			a, a:visited {
 				float: right;
