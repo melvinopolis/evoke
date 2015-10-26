@@ -4,6 +4,10 @@
 		max-width: 600px;
 		margin: 20px auto;
 	}
+	@media #{$medium-screen} {
+		display: inline-block;
+		vertical-align: middle;
+	}
 	h2 {
 		@include headerStyles;
 		background: $mediumBlue;
@@ -21,7 +25,7 @@
 				border-bottom: border(1px, $lightBlue);
 			}
 			p {
-				padding-left: 20px;
+				padding-left: 30px;
 			}
 			a, a:visited {
 				float: right;
@@ -35,4 +39,22 @@
 			}
 		} // end li
 	} // end ul
+}
+
+.mystery-box {
+	display: none;
+	@media #{$medium-screen} {
+		float: right;
+		vertical-align: middle;
+		display: inline-block;
+		width: 22%;
+		height: 267px;
+		margin-top: 20px;
+		background: $white;
+	}
+	h2 {
+		@include headerStyles;
+		background: $mediumBlue;
+		color: $mediumBlue;
+	}
 }

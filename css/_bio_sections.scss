@@ -6,6 +6,9 @@
 	background: $white;
 	border-bottom: border(1px, $lightBlue);
 	@media #{$medium-screen} {
+		position: absolute;
+		left: 0;
+		top: 50px;
 		width: 70%;
 		display: inline-block;
 		height: 244px;
@@ -69,7 +72,9 @@
 	width: 100%;
 	background: $white;
 	@media #{$medium-screen} {
-		float: right;
+		position: absolute;
+		right: 0;
+		top: 50px;
 		display: inline-block;
 		width: 30%;
 	}

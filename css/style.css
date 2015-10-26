@@ -70,11 +70,22 @@ img {
 
 .main {
   padding-top: 50px;
-  width: 100%;
   box-sizing: border-box; }
   @media (min-width: 768px) {
     .main {
-      padding-left: 174px; } }
+      position: absolute;
+      top: 0;
+      left: 174px;
+      right: 0; } }
+  @media (min-width: 992px) {
+    .main .row {
+      position: relative;
+      top: 400px;
+      left: 0;
+      display: table;
+      width: 100%;
+      padding: 15px 3% 0;
+      box-sizing: border-box; } }
 
 .logo {
   position: absolute;
@@ -168,7 +179,7 @@ nav {
   top: 0;
   left: 0;
   width: 174px;
-  height: 1000px;
+  height: 1026px;
   padding-top: 50px;
   box-sizing: border-box;
   background: #323a45;
@@ -232,6 +243,9 @@ nav {
   border-bottom: 1px solid #cfd8dd; }
   @media (min-width: 992px) {
     .user-info {
+      position: absolute;
+      left: 0;
+      top: 50px;
       width: 70%;
       display: inline-block;
       height: 244px; } }
@@ -284,7 +298,9 @@ nav {
   background: #fff; }
   @media (min-width: 992px) {
     .managers {
-      float: right;
+      position: absolute;
+      right: 0;
+      top: 50px;
       display: inline-block;
       width: 30%; } }
   .managers .manager {
@@ -329,8 +345,14 @@ nav {
 .evaluation {
   clear: both;
   width: 100%;
+  box-sizing: border-box;
   background: white;
   border-bottom: 1px solid #cfd8dd; }
+  @media (min-width: 992px) {
+    .evaluation {
+      position: absolute;
+      top: 294px;
+      right: 0; } }
   .evaluation h2 {
     color: #546f7a;
     width: 100%;
@@ -418,6 +440,10 @@ nav {
     .actions {
       max-width: 600px;
       margin: 20px auto; } }
+  @media (min-width: 992px) {
+    .actions {
+      display: inline-block;
+      vertical-align: middle; } }
   .actions h2 {
     width: 100%;
     padding: 20px;
@@ -445,7 +471,7 @@ nav {
     .actions ul li:not(:last-child) {
       border-bottom: 1px solid #cfd8dd; }
     .actions ul li p {
-      padding-left: 20px; }
+      padding-left: 30px; }
     .actions ul li a, .actions ul li a:visited {
       float: right;
       margin-top: 5px;
@@ -454,5 +480,25 @@ nav {
       font-weight: 400; }
       .actions ul li a:hover, .actions ul li a:visited:hover {
         text-decoration: underline; }
+
+.mystery-box {
+  display: none; }
+  @media (min-width: 992px) {
+    .mystery-box {
+      float: right;
+      vertical-align: middle;
+      display: inline-block;
+      width: 22%;
+      height: 267px;
+      margin-top: 20px;
+      background: #fff; } }
+  .mystery-box h2 {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    font-weight: 400;
+    background: #546f7a;
+    color: #546f7a; }
 
 /*# sourceMappingURL=style.css.map */

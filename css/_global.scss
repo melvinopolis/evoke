@@ -1,3 +1,7 @@
+// * {
+// 	border: 1px solid black;
+// }
+
 body {
 	color: $darkBlue;
 	background: $tan;
@@ -14,10 +18,24 @@ img {
 
 .main {
 	padding-top: 50px;
-	width: 100%;
+	// width: 100%;
 	box-sizing: $boxSizing;
 	@media #{$small-screen} {
 		//gives space for the sidebar while keeping the rest of the page fluid
-		padding-left: 174px;
+		position: absolute;
+		top: 0;
+		left: 174px;
+		right: 0;
+	}
+	.row {
+		@media #{$medium-screen} {
+			position: relative;
+			top: 400px;
+			left: 0;
+			display: table;
+			width: 100%;
+			padding: 15px 3% 0;
+			box-sizing: $boxSizing;
+		}
 	}
 }
