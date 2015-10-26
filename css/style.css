@@ -297,6 +297,7 @@ nav {
       .managers .manager {
         float: none;
         width: 100%;
+        height: 122px;
         display: inline-block; } }
     .managers .manager h2 {
       width: 50%;
