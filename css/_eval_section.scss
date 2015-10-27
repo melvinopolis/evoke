@@ -41,6 +41,9 @@
 				& > * {
 					display: block;
 				}
+				&:not(:first-child) {
+					margin-left: -3px;
+				}
 			}
 			@media #{$medium-screen} {
 				border-top: border(4px, $lightBlue);

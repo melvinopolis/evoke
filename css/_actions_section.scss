@@ -22,6 +22,7 @@
 		color: $mediumBlue;
 		i {
 			@include warningIcon;
+			top: 0;
 		}
 		li {
 			& > * {
@@ -31,16 +32,17 @@
 				border-bottom: border(1px, $lightBlue);
 			}
 			p {
-				padding-left: 30px;
-				max-width: 225px;
+				padding-left: 25px;
+				width: 75%;
 				box-sizing: $boxSizing;
 				@media (min-width: 400px) {
-					max-width: 500px;
 				}
 			}
 			a, a:visited {
-				float: right;
-				margin-top: 5px;
+				position: absolute;
+				right: 2px;
+				margin-top: 2px;
+				margin-left: 10px;
 				text-decoration: none;
 				color: $mediumBlue;
 				font-weight: $normalWeight;

@@ -5,6 +5,9 @@
 	box-sizing: $boxSizing;
 	background: $white;
 	border-bottom: border(1px, $lightBlue);
+	@media (max-width: 319px) {
+		padding: 24px 5% 24px 0;
+	}
 	@media #{$medium-screen} {
 		position: absolute;
 		left: 0;
@@ -112,6 +115,10 @@
 			color: $white;
 			text-align: center;
 			font-weight: $lightWeight;
+			@media (max-width: 319px) {
+				padding: 5px 5px;
+				width: auto;
+			}
 			@media (min-width: 400px) {
 				font-size: $smallHeader;
 				width: 50%;

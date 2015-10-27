@@ -5,12 +5,12 @@
 	display: inline-block;
 	box-sizing: $boxSizing;
 	height: 50px;
+	width: 174px;
 	padding: 0 40px;
 	background: $darkBlue;
 	color: $white;
 	letter-spacing: .1em;
 	border-bottom: border(2px, #000);
-	
 	z-index: 4;
 	h1 {
 		margin: 5px 0;
@@ -38,6 +38,10 @@ nav {
 		font-size: 35px;
 		border-right: border(1px, $lightBlue);
 		cursor: pointer;
+		@media (max-width: 319px) {
+			font-size: 25px;
+			padding: 12px 7px 12px 180px;
+		}
 		@media #{$small-screen} {
 			display: none;
 		}
@@ -52,6 +56,9 @@ nav {
 		img {
 			height: 35px;
 			padding: 5px 10px;
+			@media (max-width: 319px) {
+				display: none;
+			}
 			@media (min-width: 400px) {
 				height: 40px;
 			}
@@ -72,6 +79,9 @@ nav {
 			position: relative;
 			bottom: 10px;
 			right: 10px;
+			@media (max-width: 319px) {
+				top: 15px;
+			}
 		}
 		.dropdown {
 			position: absolute;
